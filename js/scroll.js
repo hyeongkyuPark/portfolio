@@ -40,10 +40,16 @@ function mainNavScroll() {
 function headerPositionFixed() {
     const header = document.getElementById('main-header');
     const home = document.getElementById('home');
+    const container = document.getElementsByClassName('container')[0];
 
     if(home.getBoundingClientRect().top < -390) {
+        header.style.width = container.clientWidth + 'px';
         header.style.position = 'fixed';
+        header.style.margin = '0 auto';
+        header.style.left = '0';
+        header.style.right = '0';
     } else {
+        header.style.width = '100%';
         header.style.position = 'absolute';
     }
 }
@@ -97,3 +103,9 @@ function isElementUnderBottom(elem, triggerDiff) {
   window.addEventListener('scroll', headerPositionAnimation);
   window.addEventListener('scroll', mainNavScroll);
   window.addEventListener('scroll', mainNavSelected);
+
+window.addEventListener('resize', () => { 
+    const header = document.getElementById('main-header');
+    const container = document.getElementsByClassName('container')[0];
+    header.style.width = container.clientWidth + 'px';
+});

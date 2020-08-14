@@ -4,14 +4,16 @@ body {
 }
 
 .container {
+    position: relative;
     width: 1200px;
 }
 
 header {
     position: absolute;
     background: white;
-    width: 1200px;
+    width: 100%;
     top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +64,9 @@ header {
     height: 3px;
     background: black;
 }
-
+#nav-menu-btn {
+    display: none;
+}
 
 
 
@@ -79,7 +83,7 @@ header {
 }
 #home > .text-box {
     position: absolute;
-    width: 600px;
+    width: 50%;
     box-sizing: border-box;
     padding: 0 45px;
     line-height: 4rem;
@@ -142,7 +146,7 @@ span {
     box-sizing: border-box;
 }
 #about>img {
-    width: 450px;
+    width: 38%;
     height: 600px;
 }
 #about>.text-box {
@@ -170,6 +174,7 @@ span {
 #about>.text-box>p {
     font-size: 18px;
     margin-bottom: 40px;
+    word-break: keep-all;
 }
 .info-item {
     display: flex;
@@ -179,10 +184,12 @@ span {
     color: black;
     font-weight: bold;
 }
-.info-item>p {
-    width: 150px;
+.info-item>p:nth-child(1) {
+    width: 25%;
 }
-
+.info-item>p:nth-child(2) {
+    width: 40%;
+}
 
 
 #resume {
@@ -222,7 +229,7 @@ span {
 }
 .resume-items {
     display: grid;
-    grid-template-columns: 600px 600px;
+    grid-template-columns: 50% 50%;
 }
 .resume-item {
     height: 400px;
