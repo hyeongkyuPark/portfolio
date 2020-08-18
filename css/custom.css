@@ -477,3 +477,50 @@ span {
     height: 100%;
     outline: none;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px;
+}
+
+footer > div {
+    padding: 20px;
+}
+
+footer > div > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+footer > div > p,
+footer > div li {
+    line-height: 2em;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+.footer-link i,
+.footer-project i,
+.footer-info i
+{
+    margin-right: 10px;
+}
+
+.footer-about-box {
+    display: flex;
+}
+.footer-about-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 50px;
+    background: rgb(104, 104, 104);
+    margin-right: 10px;
+}
+.footer-about-item i {
+    color: white;
+}
