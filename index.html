@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -259,7 +260,7 @@
                 <div class="text-box">
                     <h2>MyProjects</h2>
                     <h3>Projects</h3>
-                    <p></p>
+                    <p>이미지를 클릭하시면 상세페이지가 표시됩니다.</p>
                 </div>
                 <ul class="projects-items">
                     <li class="projects-item up-on-scroll">
@@ -310,8 +311,24 @@
 
         </footer>
 
-        <div class="modal">
+    </div>
+    <div id="project-modal">
+        <div class="modal-inner">
+            <div id="modal-close-btn">
+                <i class="fas fa-window-close"></i>
+            </div>
+            <div id="left-btn"><i class="fas fa-caret-left"></i></div>
+            <div class="modal-img">
 
+            </div>
+            <div id="right-btn"><i class="fas fa-caret-right"></i></div>
+            <div class="link-box">
+            </div>
+            <div class="img-list-box">
+                <ul class="img-list">
+                    
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -320,6 +337,7 @@
     <script src="./js/percent-bar.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/menu-open.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
