@@ -249,4 +249,12 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+
+    .modal-inner {
+        width: 100%;
+        height: 600px !important;
+    }
+    .modal-img {
+        height: 60% !important;
+    }
 }
