@@ -49,7 +49,7 @@ const openModal = (modalContent) => {
 
 modal.style.display = 'flex';
 body.style.overflow = 'hidden';
-modalImg.style.background = 'url(../images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
+modalImg.style.background = 'url(../portfolio/images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
 };
 
 for (let i = 0; i < projectsItem.length; i++) {
@@ -103,7 +103,7 @@ const contentMoveLeft = () => {
                 document.getElementsByClassName('img')[i].style.color = 'gray'
             }
         }
-        document.getElementsByClassName('modal-img')[0].style.background = 'url(../images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
+        document.getElementsByClassName('modal-img')[0].style.background = 'url(../portfolio/images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
     }
 };
 const contentMoveRight = () => {
@@ -118,7 +118,7 @@ const contentMoveRight = () => {
                 document.getElementsByClassName('img')[i].style.color = 'gray'
             }
         }
-        document.getElementsByClassName('modal-img')[0].style.background = 'url(../images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
+        document.getElementsByClassName('modal-img')[0].style.background = 'url(../portfolio/images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
     }
 };
 
