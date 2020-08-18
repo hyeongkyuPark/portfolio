@@ -40,7 +40,8 @@ const openModal = (modalContent) => {
                 document.getElementsByClassName('img')[i].style.color = 'gray'
             }
             document.getElementsByClassName('img')[nowPage-1].style.color = 'black';
-            modalImg.style.background = 'url(../images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
+            console.log(modalContentName);
+            modalImg.style.background = 'url(../portfolio/images/' + modalContentName + '/' + nowPage + '.png) no-repeat center /contain'
             
         });
        
